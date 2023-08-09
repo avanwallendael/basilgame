@@ -49,7 +49,7 @@ function preload() {
     this.load.spritesheet('dog-jump', 'assets/dogjump4.png', { frameWidth: 32, frameHeight: 32 });
     this.load.spritesheet('dog-nap', 'assets/dognap2.png', { frameWidth: 32, frameHeight: 32 });
     this.load.spritesheet('dog-zoom', 'assets/zoom.png', { frameWidth: 32, frameHeight: 32 });
-    this.load.audio('bgMusic', 'assets/13 Good Vibrations.mp3');
+    //this.load.audio('bgMusic', 'assets/13 Good Vibrations.mp3');
     //this.load.audio('bgMusic', 'assets/basil1.mp3');
     this.load.audio('bork', 'assets/basil1.mp3');
     this.load.audio('grembel', 'assets/grembel.mp3');
@@ -108,9 +108,9 @@ function create() {
 	bigbed_bg1 = this.physics.add.staticGroup();
 	bigbed_bg1.create(6000, 395, 'bed4'); // Example log creation, adjust position
 	
-	var music = this.sound.add('bgMusic');
-    music.play({ loop: true });
-    music.setVolume(0.5);
+	//var music = this.sound.add('bgMusic');
+    //music.play({ loop: true });
+    //music.setVolume(0.5);
 
 	kibble = this.physics.add.staticGroup();
 
