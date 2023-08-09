@@ -152,7 +152,7 @@ function create() {
 	instrucText6 = this.add.text(10, 230, 'Collect kibbles', { fontSize: '15px', color: '#0a114d', fontFamily: 'Helvetica' });
 
     // Create the player dog
-    this.player = this.physics.add.sprite(100, 450, 'dog');
+    this.player = this.physics.add.sprite(100, 450, 'dog').setScale(2);
     this.player.setBounce(0.2);
     this.player.setCollideWorldBounds(true);
 
